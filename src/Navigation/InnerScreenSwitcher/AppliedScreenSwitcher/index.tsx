@@ -10,13 +10,18 @@ import {
 import { createStackNavigator } from "react-navigation";
 import { Animated, Easing } from "react-native";
 
-import NotificationsMain from "./../../../screens/Notifications/Home";
+import AppliedFeed from "./../../../screens/Applied/Home";
+import AppliedStatus from "./../../../screens/Applied/AppliedView";
 
 export default createStackNavigator(
   {
-    NotificationsMain: {
-      screen: NotificationsMain,
-      path: "notif"
+    AppliedFeed: {
+      screen: AppliedFeed,
+      path: "applied"
+    },
+    AppliedStatus: {
+      screen: AppliedStatus,
+      path: "applied/:id"
     }
   },
   {
